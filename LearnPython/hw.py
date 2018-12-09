@@ -8,6 +8,6 @@ kkk
 msg = "Hello World!!!!!!!!!!"
 print(msg)
 
-x = 100
+x = 1000
 print(x/3)
 print(x//3)
