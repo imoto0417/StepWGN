@@ -6,6 +6,10 @@ LLL
 
 
 """
+
+import numpy as np
+import tensorflow as tf
+
 msg = "Hello World!!!!!!!!!!"
 print(msg)
 
