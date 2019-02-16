@@ -5,7 +5,6 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 import numpy as np
 
-
 data = np.loadtxt("slt10.csv",       # 読み込みたいファイルのパス
                   delimiter=",",    # ファイルの区切り文字
                   skiprows=0,       # 先頭の何行を無視するか（指定した行数までは読み込まない）
