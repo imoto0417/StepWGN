@@ -1,10 +1,10 @@
-# -*- coding: utf-8 -*- 
+# -*- coding: utf-8 -*-
 
 www = []
 www.append('python')
-www.append('izm')
+www = www + ["izm"]
 www.append('com')
-www.append('/')
+www.extend('/')
 print(www)
 print('--------------------------------')
 www.insert(1, '-')
@@ -17,10 +17,8 @@ print(www)
 
 i = 0
 www2 = []
-
 for value in www:
     www2.append(value)
 print(www2)
-
 for i in range(len(www2)):
     print(www2[i])
