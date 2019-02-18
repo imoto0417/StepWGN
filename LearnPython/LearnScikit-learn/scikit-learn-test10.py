@@ -27,8 +27,8 @@ print(learn_data)
 print(learn_label)
 
 # アルゴリズムを指定。K最近傍法を採用
-#clf = KNeighborsClassifier(n_neighbors=1)
-clf = SVC(kernel='rbf', C=10, gamma=0.1) # clfはclassificationの略語
+clf = KNeighborsClassifier(n_neighbors=1)
+#clf = SVC(kernel='rbf', C=10, gamma=0.1) # clfはclassificationの略語
 # 学習用のデータと結果を学習する,fit()
 clf.fit(learn_data, learn_label)
 
