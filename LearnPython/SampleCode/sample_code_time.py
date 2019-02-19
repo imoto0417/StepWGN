@@ -7,6 +7,9 @@ class TMClass:
         self.code = code
         self.name = name
         self.count = 0
+    def __del__(self):
+        self.count = 0
+
     def get_today_1(self):
         today = datetime.today()
         value = (today.year, today.month, today.day,
@@ -18,6 +21,13 @@ class TMClass:
         value = (today)
         self.count += 1
         return (self.code, self.name, self.count, str(value))
+
+tmc = TMClass(1,'imoto')
+tuple = tmc.get_today_1()
+print(tuple)
+
+for i in range(0,len(tuple)):
+    print(i,tuple[i])
 
 classes = []
 classes.append(TMClass(1, 'kanayo'))
