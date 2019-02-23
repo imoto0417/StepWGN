@@ -1,5 +1,9 @@
 #coding: UTF-8
 
+
+
+
+
 amari = 10 % 3
 
 print("10 % 3"),
