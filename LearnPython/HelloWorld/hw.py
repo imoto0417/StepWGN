@@ -16,5 +16,5 @@ print(msg)
 
 if(1)
 x = 1000
-print(x/3)
-print(x//3)
+print(x / 3)
+print(x // 3)

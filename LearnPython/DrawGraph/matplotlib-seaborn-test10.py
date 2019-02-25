@@ -18,7 +18,6 @@ ax.set_xlabel('gene')
 ax.set_ylabel('gene expression [log(TPM)]')
 
 
-
 # show plots
 plt.tight_layout()
 plt.show()

@@ -36,15 +36,15 @@ ax3.set_xlabel('Year')
 ax3.set_ylabel('Value')
 ax3.set_title('Diff')
 #
-pi = math.pi   #mathモジュールのπを利用
-igfont = {'family':'IPAexGothic'}
-x = np.linspace(0, 360, 100)  #0から360度までの範囲を100分割したnumpy配列
-y = np.sin(x*pi/180)
+pi = math.pi  # mathモジュールのπを利用
+igfont = {'family': 'IPAexGothic'}
+x = np.linspace(0, 360, 100)  # 0から360度までの範囲を100分割したnumpy配列
+y = np.sin(x * pi / 180)
 ax4 = fig.add_subplot(2, 2, 3)
 ax4.plot(x, y, label='Sin')
-ax4.set_xlabel('Angle',**igfont,fontsize=16)
-ax4.set_ylabel('値',**igfont, fontsize=16)
-ax4.set_title('Sin',**igfont, fontsize=16)
+ax4.set_xlabel('Angle', **igfont, fontsize=16)
+ax4.set_ylabel('値', **igfont, fontsize=16)
+ax4.set_title('Sin', **igfont, fontsize=16)
 
 
 # show plots
@@ -54,4 +54,4 @@ plt.show()
 
 # 円グラフ
 # plt.pie(weight, labels=colorlist)
-#グラフの凡例
+# グラフの凡例
