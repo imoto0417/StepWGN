@@ -1,18 +1,24 @@
 # -*- coding: utf-8 -*-
+
+from sklearn.model_selection import train_test_split
+from sklearn.datasets import load_boston
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+import tensorflow as tf
+import os
+
+# CPU error 対策
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
 # テンソルフロー
 
-import tensorflow as tf
 
 # 計算やデータ処理のライブラリ
-import numpy as np
-import pandas as pd
 
 # データ可視化のライブラリ
-import matplotlib.pyplot as plt
 
 # データセットの取得&処理のライブラリ
-from sklearn.datasets import load_boston
-from sklearn.model_selection import train_test_split
 
 # インポートの確認
 # print(tf.__version__)
@@ -27,17 +33,20 @@ df = pd.DataFrame(boston.data, columns=boston.feature_names)
 df['target'] = boston.target
 
 # データの最初の5行を表示
+print("データの最初の5行を表示")
 print(df.head())
 
 # 特徴量とターゲットに切り分け
 X_data = np.array(boston.data)
 y_data = np.array(boston.target)
 
-# １行目のデータの特徴量（X)とターゲット（y）を確認
+# １行目のデータの特徴量（X)
+print("１行目のデータの特徴量（X)")
 print(X_data[0:1])
 print(y_data[0:1])
 
 # 正規化
+print("正規化")
 
 
 def norm(data):
@@ -59,9 +68,10 @@ ones = np.ones((506, 1))
 # 1を追加
 X_data = np.c_[ones, X_data]
 print(X_data.shape)
-
+print(X_data[0:1])
 
 # 訓練データとテストデータへ切り分け 8:2
+print("訓練データとテストデータへ切り分け 8:2")
 X_train, X_test, y_train, y_test = train_test_split(
     X_data, y_data, test_size=0.2, random_state=42)
 y_train = y_train.reshape(404, 1)
