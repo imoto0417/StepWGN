@@ -10,9 +10,9 @@ title_name = 'Graph'
 y_name = 'Value'
 x_name = 'Year'
 
-#グラフタイトル
+# グラフタイトル
 plt.title(title_name)
-#グラフの軸
+# グラフの軸
 plt.xlabel(x_name)
 plt.ylabel(y_name)
 
@@ -24,7 +24,7 @@ plt.bar(year, hight, label='Hight')
 
 # 円グラフ
 # plt.pie(weight, labels=colorlist)
-#グラフの凡例
+# グラフの凡例
 
 plt.legend()
 plt.show()

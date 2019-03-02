@@ -1,39 +1,17 @@
 # -*- coding: utf-8 -*-
 
-from datetime import datetime
+from mymodules import MyTmClass as myclass
+from time import sleep
 
-class TMClass:
-    def __init__(self, code, name):
-        self.code = code
-        self.name = name
-        self.count = 0
-    def __del__(self):
-        self.count = 0
+tmc = myclass.TMClass()
 
-    def get_today_1(self):
-        today = datetime.today()
-        value = (today.year, today.month, today.day,
-            today.hour, today.minute, today.second, today.microsecond)
-        self.count += 1
-        return(self.code, self.name, self.count, value)
-    def get_today_2(self):
-        today = datetime.today()
-        value = (today)
-        self.count += 1
-        return (self.code, self.name, self.count, str(value))
+print(myclass.__doc__)
+print(myclass.TMClass.__doc__)
+print(myclass.TMClass.get_today_time.__doc__)
+print(tmc.get_today_time())
+myclass.print_today()
+print(tmc.push_time())
+sleep(1)
+print(tmc.diff_time())
 
-tmc = TMClass(1,'imoto')
-tuple = tmc.get_today_1()
-print(tuple)
-
-for i in range(0,len(tuple)):
-    print(i,tuple[i])
-
-classes = []
-classes.append(TMClass(1, 'kanayo'))
-classes.append(TMClass(2, 'takuya'))
-
-for tm in classes:
-    for i in range(1,10,2):
-        print(tm.get_today_1())
-        #print(tm.get_today_2())
+del tmc

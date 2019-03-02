@@ -15,8 +15,8 @@ print("name1 is name2", name1 is name2)
 list1 = [1, 2, 3]
 list2 = [1, 2, 3]
 
-print ("list1 == list2", list1 == list2)
-print ("list1 is list2", list1 is list2)
+print("list1 == list2", list1 == list2)
+print("list1 is list2", list1 is list2)
 
 list1 = [1, 2, 3]
 list2 = list1
