@@ -10,6 +10,7 @@ title_name = 'Graph'
 y_name = 'Value'
 x_name = 'Year'
 
+
 # グラフタイトル
 plt.title(title_name)
 # グラフの軸

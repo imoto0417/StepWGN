@@ -1,0 +1,12 @@
+@startuml
+start
+:Initiaization;
+if(test flag) then (true)
+    :A act;
+    :flag = false;
+else (false)
+    :B act;
+endif
+:post process;
+stop
+@enduml

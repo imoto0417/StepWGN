@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # K最近傍法
 # K最近傍法(KNeighborsClassifier)によるクラス分類
 
