@@ -7,6 +7,8 @@ import pandas as pd
 import numpy as np
 import tensorflow as tf
 import os
+import sys
+
 
 # CPU error 対策
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
