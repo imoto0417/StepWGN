@@ -4,6 +4,8 @@ from tensorflow.examples.tutorials.mnist import input_data
 import time
 import tensorflow as tf
 import sys
+import warnings
+warnings.filterwarnings('ignore')
 print(sys.version)
 #import numpy as np
 #import matplotlib.pyplot as plt
