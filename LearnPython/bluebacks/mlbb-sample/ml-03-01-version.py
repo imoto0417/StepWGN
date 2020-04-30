@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+#
+#
+
 
 try:
     import sklearn
@@ -76,4 +79,3 @@ if theanoExists == True:
     print('theanoのバージョンは{0}です'.format(theano.__version__))
 else:
     print('theanoはインストールされていません')
-
