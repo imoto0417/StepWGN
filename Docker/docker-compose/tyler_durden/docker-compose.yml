@@ -1,0 +1,11 @@
+version: '3'
+services:
+  tyler_durden:
+    image: 'debian'
+    # -v option
+    volumes:
+    - /home/vagrant/work:/work
+    # -i option
+    stdin_open: true
+    # -t option
+    tty: true
